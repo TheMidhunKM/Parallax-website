@@ -788,7 +788,6 @@ function HeroParallax({ edition, days }) {
         end: 'bottom bottom',
         onUpdate: (self) => {
           const progress = self.progress;
-          currentFrameRef.current = progress;
           targetFrameRef.current = progress * (TOTAL_HERO_FRAMES - 1);
           focusFrameRef.current(targetFrameRef.current);
 

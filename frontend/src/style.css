@@ -2362,6 +2362,9 @@ html.lenis, html.lenis body {
 
 .home-odyssey-panel .ho-root {
   pointer-events: auto;
+  /* Let the scrubbed frame sequence show through the opening panel: the
+     overlay inside .ho-bg already supplies the scrim behind the copy. */
+  background: transparent;
 }
 
 .hero-sticky-stage {
